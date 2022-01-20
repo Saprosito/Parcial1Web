@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+<body>
+    <div id="contenido">
+    <h3>WebDeveloper</h3>
+    <form class="form" name="form" id="form" method="post"> 
+        <p><b>Formulario de afiliación</b></p>
+        <div>
+            <div class="input-field col s6" id="nombre">
+            <input id="nombre" type="text" placeholder="Nombres completo" style="width : 320px;" minlength="5" maxlength="50" class="validate"></input>
+            <i class="material-icons prefix">account_circle</i>
+            <span class="helper-text" data-error="Un nombre completo debe ser mayor a 5 letras" data-success="aceptado"></span>
+            </div>
+            <div class="input-field col s6" id="email">
+            <input id="email" type="email" placeholder="Email" style="width : 320px;" minlength="5" maxlength="120" class="validate"></input>
+            <i class="material-icons prefix">email</i>
+            <span class="helper-text" data-error="introduzca un email valido" data-success="aceptado"></span>
+            </div>
+            <div class="input-field col s6" id="telefono">
+            <input id="telefono" type="number" min="1000000000" max="9999999999" minlength="10" maxlength="10" placeholder="Telefono" style="width : 320px;" class="validate"></input>
+            <i class="material-icons prefix">phone</i>
+            <span class="helper-text" data-error="Numeros telefonicos deben tener 10 números" data-success="aceptado"></span>
+            </div>
+            <div class="input-field col s6" id="gusto">
+                <input id="gusto" name="gusto" ></input> 
+                <button id="gusto">gusto</button>
+            </div>
+            <div id="tabla">
+            <table id="tablaGusto" class="table mt-2 table-bordered table-striped">
+                <thead>
+                    <tr class="text center">
+                        <th>Gusto</th>
+                        <th>%</th>
+                        <th>edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            </div>
+            <br>
+            <A HREF="https://sites.google.com/view/dweb1-uis/home">Ir a site de P web </A> 
+        </div>
+    </form>
+</div>
+<script src="code.js"></script>
+</body>
+</html>
